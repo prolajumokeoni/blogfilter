@@ -17,8 +17,15 @@ const blogs = [
 blogs.forEach(
   (blog) =>
     (blogSite.innerHTML +=
-      "<div  class='post m-4 p-5 border border-info'>" +
+      "<article  class='post m-4 p-5 border border-info'>" +
       Object.values(blog).join(" "))
-      + "</div>");
+      + "</article>");
 
 
+
+let post  = document.getElementsByClassName("post");
+
+
+for (let i = 0; i < post.length; i++) {
+  console.log(post[i].innerHTML);
+}
