@@ -1,6 +1,7 @@
 ## BLOG FILTER
 This is a simple web application that has a filter function which filters specific words, to filter a word kindly add it to the index.js file line 25, to filter the user clicks the filter button to undo the user clicks the refresh button. 
-
+## LIVE DEMO
+[Live demo](https://prolajumokeoni.github.io/blogfilter/)
 ### To get a local copy up and running follow these simple steps.
 
 - You can clone this repo by typing `git clone https://github.com/prolajumokeoni/blogfilter` on your terminal.
