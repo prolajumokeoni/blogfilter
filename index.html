@@ -14,9 +14,34 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 class="text-secondary">Blog Posts</h1>				
-				<div id="blogSite" class="d-flex"></div>
-
+    <div class="p-3 d-flex justify-content-between align-items-center">
+      <h1 class="text-secondary text-dark">Blog Posts</h1>
+      <div class="d-flex justify-content-around">
+        <h6 class="mx-2 text-primary">Filter words</h6>
+        <h6 class="mx-2 text-success">Filter words</h6>
+      </div>
+    </div>
+    <div class="text-end mx-3">
+    <button
+      id="fiterWords"
+      class="btn btn-outline-primary btn-sm"
+      type="button"
+      onclick="rep()"
+    >
+      Filter words
+    </button>
+    <button
+      type="submit"
+      class="btn btn-outline-success btn-sm"
+      onClick="refreshPage()"
+    >Refresh Button
+    </button>
+  </div>
+    <div class="container">
+      <div class="row">
+          <div id="blogSite"></div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

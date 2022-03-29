@@ -17,15 +17,16 @@ const blogs = [
 blogs.forEach(
   (blog) =>
     (blogSite.innerHTML +=
-      "<article  class='post m-4 p-5 border border-info'>" +
+      "<article  class='post m-4 p-3 shadow-sm p-3 mb-5 bg-body rounded'>" +
       Object.values(blog).join(" "))
       + "</article>");
 
-
-
-let post  = document.getElementsByClassName("post");
-
-
-for (let i = 0; i < post.length; i++) {
-  console.log(post[i].innerHTML);
+function rep() {
+  document.body.innerHTML = document.body.innerHTML.replace(/al/g, '***');
 }
+function refreshPage(){
+  window.location.reload();
+} 
+
+
+
